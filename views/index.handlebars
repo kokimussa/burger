@@ -1,11 +1,13 @@
 <div class="header-container">
-  <header>Eat Burger</header>
+<h1>Eat Burger</h1>
+ 
 </div>
 
 <div class="main-container">
+
   <section id="available-hamburgers">
     <ul id="burger-list">
-      {{#each burgers}}
+      {{#each burger}}
         {{#unless this.devoured}}
           <li class="available-burger">
             <span class="burgers">
@@ -25,7 +27,7 @@
   </section>
   <section id="devoured-hamburgers">
     <ul>
-      {{#each burgers}}
+      {{#each burger}}
         {{#if this.devoured}}
           <li class="devour-burger">
             {{this.id}}
